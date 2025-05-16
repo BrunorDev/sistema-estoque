@@ -1,6 +1,6 @@
 # 📦 Sistema de Controle de Estoque
 
-Este projeto é uma API REST para gerenciar produtos e controlar o estoque de uma aplicação. Desenvolvido com **Java** e **Spring Boot**, utiliza **Spring Data JPA** para persistência de dados e **MySQL** como banco de dados relacional.
+Este projeto é uma API REST desenvolvida para gerenciar e controlar o estoque de uma aplicação, permitindo criar, visualizar e atualizar itens.
 
 ---
 
@@ -79,4 +79,16 @@ http://localhost:8080/swagger-ui/index.html
 | POST   | `/produtos/{id}/decrease-stock`  | Baixa de estoque                    |
 
 ---
+
+## 🧪 Exemplo de um JSON para um Cadastro de Produto
+```
+{
+  "nome": "Teclado Mecânico",
+  "descricao": "Teclado mecânico com switches azuis e iluminação RGB.",
+  "preco": 349.90,
+  "quantidade": 15
+}
+
+## 📌 Considerações Finais
+
 
