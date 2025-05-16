@@ -17,7 +17,18 @@ Este projeto é uma API REST para gerenciar produtos e controlar o estoque de um
 - **Mockito**
 
 ---
+📁 Estrutura do Projeto
+O projeto segue o padrão de camadas:
 
+- **Config: Configuração do ModelMapper e Swagger**
+- **Controller: Recebe e processa as requisições HTTP.**
+- **dto: Objetos de transferência de dados (Data Transfer Objects)**
+- **Entity: Entidades JPA representando as tabelas do banco**
+- **Service: Contém a Regra de negócio da aplicação.**
+- **Repository: Interface para comunicação com o banco de dados.**
+- **Mapper: Conversão entre entidades e DTOs (ModelMapper, por exemplo)**
+- **Exceptions: Tratamento de exceções personalizadas**
+---
 ## 🔧 Configuração do Projeto
 
 Clone o repositório:
@@ -60,12 +71,12 @@ http://localhost:8080/swagger-ui/index.html
 
 | Método | Endpoint                        | Descrição                          |
 |--------|----------------------------------|--------------------------------------|
-| GET    | `/produto/findAll`              | Lista todos os produtos             |
-| GET    | `/produto/findById/{id}`        | Busca um produto por ID             |
-| POST   | `/produto`                      | Cadastra um novo produto            |
-| PUT    | `/produto/{id}`                 | Atualiza um produto existente       |
-| POST   | `/produto/{id}/increase-stock`  | Reposição de estoque                |
-| POST   | `/produto/{id}/decrease-stock`  | Baixa de estoque                    |
+| GET    | `/produtos/findAll`              | Lista todos os produtos             |
+| GET    | `/produtos/findById/{id}`        | Busca um produto por ID             |
+| POST   | `/produtos`                      | Cadastra um novo produto            |
+| PUT    | `/produtos/{id}`                 | Atualiza um produto existente       |
+| POST   | `/produtos/{id}/increase-stock`  | Reposição de estoque                |
+| POST   | `/produtos/{id}/decrease-stock`  | Baixa de estoque                    |
 
 ---
 
