@@ -17,7 +17,7 @@ Este projeto é uma API REST para gerenciar produtos e controlar o estoque de um
 - **Mockito**
 
 ---
-📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 O projeto segue o padrão de camadas:
 
 - **Config: Configuração do ModelMapper e Swagger**
