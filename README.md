@@ -88,7 +88,7 @@ http://localhost:8080/swagger-ui/index.html
   "preco": 349.90,
   "quantidade": 15
 }
+```
 
 ## 📌 Considerações Finais
-
-
+Desenvolvido por [Bruno Reis 👨‍💻](https://www.linkedin.com/in/bruno-reis-oliveira/)
